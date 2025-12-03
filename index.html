@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Your Name</title>
+
+  <!-- Google Font (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <div class="particles" id="particles"></div>
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li class="nav-name">KUNDAN Raj</li>
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+    <!-- HERO -->
+    <section id="home">
+      <div class="hero-grid">
+        <div>
+          <div class="hero-eyebrow">
+            <div class="hero-dot">★</div>
+            <span>Available for internships / entry-level roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span><!-- TODO: Your Name -->Kundan Raj</span>
+          </h1>
+          <p class="hero-role">
+            <!-- TODO: Your main role -->
+            Computer Science Student • Web Developer
+          </p>
+          <p class="hero-text">
+            <!-- TODO: Short intro -->
+            I like building clean, responsive websites and solving programming problems.
+            I enjoy learning new technologies and turning ideas into working projects using
+            HTML, CSS, JavaScript and Java.
+          </p>
+
+          <div class="hero-buttons">
+            <button class="btn-primary" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">
+              View Projects →
+            </button>
+            <button class="btn-secondary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+              Contact Me
+            </button>
+          </div>
+
+          <div class="hero-meta">
+            <span><strong>Location:</strong> <!-- TODO --> Bengaluru, India</span>
+            <span><strong>Tech stack:</strong> HTML • CSS • JavaScript • Java</span>
+            <span><strong>Currently:</strong> <!-- TODO --> B.Tech / B.E. CSE Student</span>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <div class="hero-card-inner">
+            <div class="avatar-row">
+              <div class="avatar">
+                K
+                <!-- TODO: First letter of your name -->
+               <!-- <img src="images.jpg" alt=""> -->
+              </div>
+              <div class="hero-card-info">
+                <div class="hero-card-name"><!-- TODO -->Kundan Raj</div>
+                <div class="hero-card-role"><!-- TODO -->Computer Science Student</div>
+                <div class="hero-card-location">📍 <!-- TODO -->DSCE,Bengaluru</div>
+                <div class="hero-tags">
+                  <span class="tag">Problem Solving</span>
+                  <span class="tag">Clean Code</span>
+                  <span class="tag">Continuous Learner</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-card-foot">
+              <div class="availability">
+                <span class="dot-online"></span>
+                <span>Actively looking for opportunities</span>
+              </div>
+              <div class="socials">
+                <!-- TODO: Put your real links -->
+                <button class="social-btn" title="GitHub"
+                        onclick="window.open('https://github.com/yourusername', '_blank')">
+                  GH
+                </button>
+                <button class="social-btn" title="LinkedIn"
+                        onclick="window.open('https://www.linkedin.com/in/kundan-raj-4474b1322?utm_source=share_via&utm_content=profile&utm_medium=member_android', '_blank')">
+                  in
+                </button>
+                <button class="social-btn" title="Email"
+                        onclick="window.location.href='kundanraj8486@gmail.com'">
+                  ✉
+                </button>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-subtitle">A quick introduction to who I am and what I enjoy doing.</p>
+
+      <div class="about-card">
+        <p>
+          <!-- TODO: Edit this paragraph -->
+          I'm a <span>Computer Science student</span> who enjoys writing code and understanding how things
+          work behind the scenes. I focus on building simple and clean user interfaces using
+          <span>HTML, CSS and JavaScript</span>, and I’m comfortable with programming in
+          <span>Java</span> for problem solving and data structures.
+        </p>
+        <p>
+          I like solving logical problems, learning from mistakes, and continuously improving
+          my understanding of core concepts. Right now I’m focusing on strengthening my
+          fundamentals in <span>DSA, OOPs, and web development</span>, and building small projects
+          to apply what I learn.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <p class="section-subtitle">Technologies and tools I’ve worked with so far.</p>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-title">Frontend</div>
+          <div class="skill-caption">Building responsive, user-friendly interfaces.</div>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3 (Flexbox / Grid)</span>
+            <span class="skill-tag">JavaScript (ES6)</span>
+            <span class="skill-tag">Responsive Design</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-title">Programming & CS</div>
+          <div class="skill-caption">Writing code and solving problems.</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">OOPs Concepts</span>
+            <span class="skill-tag">DSA Basics</span>
+            <span class="skill-tag">Problem Solving</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-title">Tools & Workflow</div>
+          <div class="skill-caption">Productive development environment.</div>
+          <div class="skill-tags">
+            <span class="skill-tag">VS Code / IntelliJ IDEA</span>
+            <span class="skill-tag">Git & GitHub</span>
+            <span class="skill-tag">Chrome DevTools</span>
+            <span class="skill-tag">Command Line Basics</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-subtitle">Some small projects I’ve built to practice and learn.</p>
+
+      <div class="projects-grid">
+        <!-- PROJECT 1 -->
+        <article class="project-card">
+          <div class="project-label">Featured</div>
+          <h3 class="project-title"><!-- TODO -->Personal Portfolio Website</h3>
+          <p class="project-desc">
+            <!-- TODO -->
+            A responsive portfolio site built with HTML, CSS and JavaScript. Includes smooth scrolling,
+            animated background and clean sections for about, skills, projects and contact.
+          </p>
+          <div class="project-foot">
+            <div class="project-stack">
+              <span class="stack-pill">HTML</span>
+              <span class="stack-pill">CSS</span>
+              <span class="stack-pill">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <!-- TODO: Put your real links -->
+              <button class="project-btn"
+                      onclick="window.open('https://your-live-link.com', '_blank')">
+                Live
+              </button>
+              <button class="project-btn"
+                      onclick="window.open('https://github.com/yourusername/portfolio', '_blank')">
+                Code
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2 -->
+        <article class="project-card">
+          <div class="project-label">Practice</div>
+          <h3 class="project-title"><!-- TODO -->To-Do List / Task Manager</h3>
+          <p class="project-desc">
+            A simple to-do web app where users can add, mark complete and delete tasks.
+            Data is saved in <code>localStorage</code> so tasks stay even after page reload.
+          </p>
+          <div class="project-foot">
+            <div class="project-stack">
+              <span class="stack-pill">HTML</span>
+              <span class="stack-pill">CSS</span>
+              <span class="stack-pill">JavaScript</span>
+              <span class="stack-pill">localStorage</span>
+            </div>
+            <div class="project-links">
+              <button class="project-btn">Live</button>
+              <button class="project-btn">Code</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 3 -->
+        <article class="project-card">
+          <div class="project-label">Mini Project</div>
+          <h3 class="project-title"><!-- TODO -->Weather App UI</h3>
+          <p class="project-desc">
+            Frontend interface to search weather for any city (can be connected to an API).
+            Focused on layout, form handling and displaying results clearly to the user.
+          </p>
+          <div class="project-foot">
+            <div class="project-stack">
+              <span class="stack-pill">HTML</span>
+              <span class="stack-pill">CSS</span>
+              <span class="stack-pill">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <button class="project-btn">Live</button>
+              <button class="project-btn">Code</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-subtitle">Interested in working together or just want to say hi? Drop a message.</p>
+
+      <div class="contact-layout">
+        <div class="contact-card">
+          <p>
+            <!-- TODO -->
+            You can reach out for internships, project collaboration or any questions related to programming
+            and web development. I’m always happy to learn, help and share knowledge.
+          </p>
+
+          <div class="contact-list">
+            <div class="contact-item">
+              <div>
+                <div class="contact-label">Email</div>
+                <div class="contact-value"><!-- TODO -->kundanraj8486@gmail.com</div>
+              </div>
+              <button class="contact-chip"
+                      onclick="window.location.href='mailto:youremail@example.com'">
+                Send Email
+              </button>
+            </div>
+
+            <div class="contact-item">
+              <div>
+                <div class="contact-label">GitHub</div>
+                <div class="contact-value"><!-- TODO -->github.com/Kundanraj</div>
+              </div>
+              <button class="contact-chip"
+                      onclick="window.open('https://github.com/yourusername', '_blank')">
+                Open
+              </button>
+            </div>
+
+            <div class="contact-item">
+              <div>
+                <div class="contact-label">LinkedIn</div>
+                <div class="contact-value"><!-- TODO -->linkedin.com/in/Kundanraj</div>
+              </div>
+              <button class="contact-chip"
+                      onclick="window.open('https:https://www.linkedin.com/in/kundan-raj-4474b1322?utm_source=share_via&utm_content=profile&utm_medium=member_android', '_blank')">
+                Open
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <form class="contact-form" id="contactForm">
+            <div class="field-group">
+              <label for="name">Your Name</label>
+              <input id="name" type="text" required />
+            </div>
+            <div class="field-group">
+              <label for="email">Your Email</label>
+              <input id="email" type="email" required />
+            </div>
+            <div class="field-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">
+              Send Message
+            </button>
+            <p class="contact-note">
+              This is a static demo form. For real use, connect it to a backend or a service like Formspree / EmailJS.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>© <span id="year"></span> <!-- TODO -->Your Name. All rights reserved.</span>
+      <span class="footer-link" onclick="document.getElementById('home').scrollIntoView({behavior:'smooth'})">
+        Back to top ↑
+      </span>
+    </footer>
+  </main>
+
+ <script src="script.js"></script>
+</body>
+</html>
